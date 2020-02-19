@@ -1,0 +1,27 @@
+{
+  "name": "data-net",
+  "version": "0.8.0",
+  "description": "a tool helping you to allocate and get async data which has a complex relationship on dependence easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lintao-alex/DataNet.git"
+  },
+  "keywords": [
+    "async",
+    "promise"
+  ],
+  "author": "lintao_alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lintao-alex/DataNet/issues"
+  },
+  "homepage": "https://github.com/lintao-alex/DataNet#readme",
+  "devDependencies": {
+    "@types/node": "^13.7.2",
+    "typescript": "^3.7.5"
+  }
+}
