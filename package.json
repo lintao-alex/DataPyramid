@@ -4,15 +4,18 @@
   "description": "a tool helping you to allocate and get async data which has a complex relationship on dependence easily",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "./node_modules/.bin/tsc",
+    "test": "node ./dist/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lintao-alex/DataNet.git"
+    "url": "git+https://github.com/lintao-alex/DataPyramid.git"
   },
   "keywords": [
     "async",
-    "promise"
+    "promise",
+    "complex relationship",
+    "data dependence"
   ],
   "author": "lintao_alex",
   "license": "MIT",
