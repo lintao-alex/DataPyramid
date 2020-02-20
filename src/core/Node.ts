@@ -16,7 +16,7 @@ export class Node<T> {
     public cache = true
   ) {}
 
-  get pms() {
+  get pms():Promise<T> {
     if(this._dependenceList.length==0) return this.getThisPms();
     return Promise.all(this._dependenceList.map(node=>node.pms)).then(args=>{
       return this.getThisPms(args)
@@ -27,7 +27,7 @@ export class Node<T> {
     let out = this._pms;
     if(this.cache && out) return out
     //No need for judge here. No mater no cache or null out, you need a new promise
-    out = this._pmsCreator.apply(null, args);
+    out = this._pmsCreator.apply(null, args||[]);
     this._pms = out;
     return out;
   }

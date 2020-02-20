@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tsc": "./node_modules/.bin/tsc",
-    "test": "node ./dist/test.js"
+    "test": "node ./dist/test.js",
+    "build": "webpack --progress"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
   "homepage": "https://github.com/lintao-alex/DataPyramid#readme",
   "devDependencies": {
     "@types/node": "^13.7.2",
-    "typescript": "^3.7.5"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   }
 }
