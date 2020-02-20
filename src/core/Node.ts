@@ -32,7 +32,7 @@ export class Node<T> {
     return out;
   }
 
-  depend(node: Node<any>) {
-    this._dependenceList.push(node)
+  depend(...node: Node<any>[]) {
+    this._dependenceList.push(...node)
   }
 }

@@ -20,8 +20,7 @@ let c = new Node(createPms)
 
 //allocate the relationship
 b.depend(a)
-c.depend(b)
-c.depend(b2)
+c.depend(b, b2)
 
 
 //call the one you need
