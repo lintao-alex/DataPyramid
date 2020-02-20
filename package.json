@@ -1,5 +1,5 @@
 {
-  "name": "data-net",
+  "name": "data-pyramid",
   "version": "0.8.0",
   "description": "a tool helping you to allocate and get async data which has a complex relationship on dependence easily",
   "main": "index.js",
@@ -20,9 +20,9 @@
   "author": "lintao_alex",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lintao-alex/DataNet/issues"
+    "url": "https://github.com/lintao-alex/DataPyramid/issues"
   },
-  "homepage": "https://github.com/lintao-alex/DataNet#readme",
+  "homepage": "https://github.com/lintao-alex/DataPyramid#readme",
   "devDependencies": {
     "@types/node": "^13.7.2",
     "typescript": "^3.7.5"
