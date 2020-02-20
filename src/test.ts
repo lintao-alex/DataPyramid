@@ -18,9 +18,15 @@ let b2 = new Node(()=>{return createPms('b2')});
 //the last one show the args pass by it's dependence. because you may request it by the prev response
 let c = new Node(createPms)
 
+Node.DEFAULT_CACHE = false
+//after this, all new Node will not cache if you don't set it's cache to true
+let d = new Node(()=>{return createPms('d')})
+let d2 = new Node(()=>{return createPms('d2')})
+
 //allocate the relationship
 b.depend(a)
 c.depend(b, b2)
+b2.depend(d,d2)
 
 
 //call the one you need

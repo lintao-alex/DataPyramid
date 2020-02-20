@@ -7,13 +7,16 @@
  * You can set the property "cache" to false if the data which you request is not static
  */
 export class Node<T> {
+  static DEFAULT_CACHE = true;
+
   private _dependenceList: Node<any>[] = [];
 
   private _pms: Promise<T>;
 
   constructor(
     private _pmsCreator: (...args: any[])=>Promise<T>,
-    public cache = true
+    //if you switch cache from false to true, it will give you the last request data when you call pms
+    public cache = Node.DEFAULT_CACHE
   ) {}
 
   get pms():Promise<T> {
