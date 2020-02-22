@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "tsc": "tsc",
-    "test": "node ./dist/test.js",
+    "test": "node ./dist/test/test.js",
     "dev": "webpack --progress --mode development",
     "build": "webpack --progress",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
