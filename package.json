@@ -2,11 +2,14 @@
   "name": "data-pyramid",
   "version": "0.8.0",
   "description": "a tool helping you to allocate and get async data which has a complex relationship on dependence easily",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "tsc": "./node_modules/.bin/tsc",
+    "tsc": "tsc",
     "test": "node ./dist/test.js",
-    "build": "webpack --progress"
+    "dev": "webpack --progress --mode development",
+    "build": "webpack --progress",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -25,8 +28,14 @@
   },
   "homepage": "https://github.com/lintao-alex/DataPyramid#readme",
   "devDependencies": {
+    "@types/jest": "^25.1.3",
     "@types/node": "^13.7.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.5",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
