@@ -1,6 +1,6 @@
 {
   "name": "data-pyramid",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "a tool helping you to allocate and get async data which has a complex relationship on dependence easily",
   "main": "lib/index.js",
   "scripts": {
