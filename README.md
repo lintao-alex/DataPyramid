@@ -40,7 +40,7 @@ How much async data should we prepare?
 
 And here is the relationship:
 
-`L-->S; [S,E]--P`
+`L-->S; [S,E]-->P`
 
 In this tool, you can follow this steps:
 
