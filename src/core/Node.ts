@@ -11,7 +11,7 @@ export class Node<T> {
 
   private _dependenceList: Node<any>[] = []
 
-  private _pms: Promise<T>
+  private _pms: Promise<T>|undefined
 
   constructor(
     private _pmsCreator: (...args: any[]) => Promise<T>,
@@ -26,7 +26,12 @@ export class Node<T> {
     })
   }
 
-  private getThisPms(args?: any[]) {
+  _resetCreator(value: (...args: any[])=>Promise<T>) {
+    this._pmsCreator = value
+    this._pms = undefined;
+  }
+
+  private getThisPms(args?: any[]):Promise<T> {
     let out = this._pms
     if (this.cache && out) return out
     // No need for judge here. No mater no cache or null out, you need a new promise
