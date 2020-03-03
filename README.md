@@ -86,7 +86,7 @@ the relationship comes real complex.
 On the other hand, if you run into some trouble about async data, thanks for leaving it in my issues.
 We can pick up a good requirement and satisfy it together!
 
-# Now it can be used directly from npm
+# it's also available in node
 ```
 npm i data-pyramid -S
 ```

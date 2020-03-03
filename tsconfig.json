@@ -5,12 +5,13 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "declaration": true,
+    "declarationDir": "lib",
     "noImplicitAny": true,
     "strictPropertyInitialization": false,
     "sourceMap": true,
     "strict": true,
     "pretty": true,
-    "typeRoots": ["node_modules/@types"],
+//    "typeRoots": ["node_modules/@types"],
     "lib": [
       "es6",
       "es2015.promise"
