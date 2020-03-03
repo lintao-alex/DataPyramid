@@ -19,6 +19,10 @@ export class Node<T> {
     public cache = Node.DEFAULT_CACHE,
   ) {}
 
+  clearCache() {
+    this._pms = undefined;
+  }
+
   get pms(): Promise<T> {
     if (this._dependenceList.length === 0) return this.getThisPms()
     return Promise.all(this._dependenceList.map(node => node.pms)).then(args => {
